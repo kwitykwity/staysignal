@@ -67,7 +67,7 @@ export default function App() {
     setLoading(true)
     setError(null)
     try {
-      const res = await axios.post("http://127.0.0.1:8000/score", {
+const res = await axios.post("https://staysignal-api.onrender.com/score", {
         channel: data.channel,
         lead_time: Number(data.lead_time),
         country: data.country,
